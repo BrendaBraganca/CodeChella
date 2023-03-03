@@ -1,0 +1,39 @@
+.banner {
+    background-image: url("../assests/Banner\ -\ Homepage.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 32px; 
+    padding-bottom: 0.5em;
+}
+ 
+.banner__container {
+    padding: 5em 1em 5em 1em;
+    text-align: center;
+} 
+
+/* -------------------------- EXPERIÊNCIA ---------------------------*/
+.experiencia {
+    background-image: url("../assests/Banner\ -\ A\ Experiência.svg");
+}
+/* -------------------------- MAPA DE SETORES---------------------------*/
+.mapadesetores {
+    background-image: url("../assests/Banner\ -\ Mapa\ de\ setores.svg");
+}
+/* -------------------------- INFORMAÇÕES---------------------------*/
+.informacoes {
+    background-image: url("../assests/Banner\ -\ Infos\ gerais.svg");
+}
+
+@media screen and (min-width: 768px){
+    .banner__container{
+        padding: 12em 1em 5em 1em;
+    }
+    .banner__titulo {
+        font-size: 64px;
+    }
+}

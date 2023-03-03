@@ -1,0 +1,76 @@
+.cabecalho {
+    background-color: var(--roxo);
+    width: 100%;
+    position: relative;
+}
+
+.cabecalho__menu-hamburguer {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assests/menu\ \(1\).svg");
+    display: inline-block;
+}
+
+.cabecalho__container {
+    padding: 1.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__container__botao {
+    display: none;
+} 
+
+.lista-menu {
+    display: none;
+}
+
+.cabecalho__container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu {
+    background-color: var(--roxo);
+    text-align: center;
+    align-items: center;
+    top: 100%;
+    position: absolute;
+    padding: 1em 0.5em;
+}
+
+.lista-menu__item {
+    padding: 0.5em;
+}
+
+.lista-menu__link {
+    font-size: 20px;
+    color: var(--branco);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    border-bottom: solid 1px var(--branco);
+    padding-bottom: 0.3em;
+}
+
+
+@media screen and (min-width: 768px){
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+    .lista-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        margin-left: -3%;
+    }
+    .lista-menu__link {
+        border-color: transparent;
+    }
+    .container__imagem {
+        padding: 0 35%;
+    }
+
+}
